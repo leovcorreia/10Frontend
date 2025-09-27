@@ -364,3 +364,16 @@ nav a {
     font-size: 16px;
   }
 }
+
+.dsc-dialog-box h2 {
+  font-size: 20px;
+  color: var(--dsc-color-font-primary);
+  margin-bottom: 20px;
+}
+
+.dsc-dialog-btn-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
