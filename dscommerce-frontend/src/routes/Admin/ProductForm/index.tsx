@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
 import './styles.css';
 import { useEffect, useState } from 'react';
 import FormInput from '../../../components/FormInput';
@@ -13,6 +13,8 @@ import { selectStyles } from '../../../utils/select';
 export default function ProductForm() {
 
     const params = useParams();
+
+    const navigate = useNavigate();
 
     const [categories, setCategories] = useState<CategoryDTO[]>([]);
 
@@ -106,6 +108,20 @@ export default function ProductForm() {
             return;
         }
 
+        const requestBody = forms.toValues(formData);
+        if (isEditing) {
+            requestBody.id = params.productId;
+        }
+
+        const request = isEditing 
+            ? productService.updateRequest(requestBody)
+            : productService.insertRequest(requestBody);
+
+        request
+            .then(() => {
+                navigate("/admin/products");
+            });
+            
     }
 
     return (
