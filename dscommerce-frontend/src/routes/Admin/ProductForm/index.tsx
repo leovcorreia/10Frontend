@@ -1,4 +1,4 @@
-import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import './styles.css';
 import { useEffect, useState } from 'react';
 import FormInput from '../../../components/FormInput';
@@ -7,7 +7,7 @@ import * as productService from '../../../services/product-service';
 import * as categoryService from '../../../services/category-service';
 import FormTextArea from '../../../components/FormTextArea';
 import type { CategoryDTO } from '../../../models/category';
-import FormSelect from '../../../components/FormInput';
+import FormSelect from '../../../components/FormSelect';
 import { selectStyles } from '../../../utils/select';
 
 export default function ProductForm() {

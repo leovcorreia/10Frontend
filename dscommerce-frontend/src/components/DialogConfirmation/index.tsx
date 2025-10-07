@@ -4,7 +4,7 @@ import ButtonPrimary from "../ButtonPrimary";
 type Props = {
     id: number, 
     message: string;
-    onDialogAnswer: () => void;
+    onDialogAnswer: (answer: boolean, id: number) => void;
 }
 
 export default function DialogConfirmation({ id, message, onDialogAnswer }: Props) {

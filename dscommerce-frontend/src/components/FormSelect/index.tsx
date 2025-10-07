@@ -1,6 +1,6 @@
 import Select from "react-select";
 
-export default function FormInput(props: any) {
+export default function FormSelect(props: any) {
 
     const { 
         className,

@@ -80,7 +80,7 @@ export default function ProductListing() {
                 productService.deleteById(productId)
                     .then(() => {
                         setProducts([]);
-                        setQueryParams({...queryParams, page: 0 });
+                        setQueryParams({ ...queryParams, page: 0 });
                     })
                     .catch(error => {
                         setDialogInfoData({
