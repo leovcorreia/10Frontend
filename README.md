@@ -66,7 +66,7 @@ yarn dev
 
 Leonardo Venâncio Correia
 
-Linkedin: https://www.linkedin.com/in/leonardo-ven%C3%A2ncio-correia-aa312b349/
+Linkedin: https://www.linkedin.com/in/leovcorreia/
 
 Email: leonardovenanciocorreia@gmail.com
 
