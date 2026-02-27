@@ -9,6 +9,8 @@ Esta aplicação consiste em um sistema de e-commerce desenvolvido para disponib
 
 **O sistema possui controle de perfis de usuário**, distinguindo usuários comuns e usuários administrativos. Usuários administrativos têm acesso às funcionalidades de CRUD de produtos, possibilitando o gerenciamento completo do catálogo.
 
+**ESTE REPOSITÓRIO POSSUI APENAS O CÓDIGO FRONTEND DA APLICAÇÃO. PARA VER O CÓDIGO BACKEND ACESSAR: https://github.com/leovcorreia/08Backend/tree/main/dscommerce**
+
 ## Layout web
 ![Web 1](https://github.com/leovcorreia/assets/blob/main/web1.jpeg)
 
